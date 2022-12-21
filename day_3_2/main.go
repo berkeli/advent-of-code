@@ -29,13 +29,11 @@ func main() {
 
 	lines := strings.Split(string(f), "\n")
 
-	for _, line := range lines {
-		left, right := line[0:len(line)/2], line[len(line)/2:]
-		hash := make(map[string]bool)
-		for i := 0; i < len(left); i++ {
-			if contains(right, string(left[i])) && !hash[string(left[i])] {
-				hash[string(left[i])] = true
-				sum += priorities[string(left[i])]
+	for i := 0; i < len(lines); i += 3 {
+		for j := 0; j < len(lines[i]); j++ {
+			if contains(lines[i+1], string(lines[i][j])) && contains(lines[i+2], string(lines[i][j])) {
+				sum += priorities[string(lines[i][j])]
+				break
 			}
 		}
 	}
