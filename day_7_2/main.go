@@ -80,11 +80,8 @@ func main() {
 	root.hydrateSize()
 
 	spaceNeeded := -1 * (70000000 - root.Size - 30000000)
-	fmt.Println(spaceNeeded)
 
 	sm := root.Size
-
-	fmt.Println(sm)
 
 	for _, v := range sizes {
 		if v >= spaceNeeded && v < sm {
