@@ -14,7 +14,7 @@ func Run(args []string) (int, error) {
 
 	switch args[0] {
 	case "1":
-		res, err := d1.Run(args[1])
+		res, err := d1.Run(args[1], path)
 		if err != nil {
 			return 0, err
 		}
