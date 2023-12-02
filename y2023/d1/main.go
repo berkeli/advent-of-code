@@ -1,4 +1,4 @@
-package dayone
+package d1
 
 import (
 	"bufio"

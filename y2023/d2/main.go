@@ -1,4 +1,4 @@
-package daytwo
+package d2
 
 import (
 	"bufio"
