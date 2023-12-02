@@ -12,7 +12,7 @@ The main.go file is a wrapper for the solutions, it takes 4 arguments:
 - INPUT_FILE_PATH - path to the input file. This is optional, if not provided, will use the input.txt file in the same directory as challenge day.
 
 ```bash
-go run . YEAR DAY PART INTPU_FILE_PATH
+go run . YEAR DAY PART INTPUT_FILE_PATH
 ```
 
 
